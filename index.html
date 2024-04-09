@@ -1,0 +1,70 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <script src="montre.js" defer></script>
+    <script src="inventaire.js" defer></script>
+</head>
+<body>
+<nav class="navbar navbar-expand-lg navbar-light bg-primary border-bottom border-body" style="height: 7rem; max-width: 100%; display: flex; justify-content: space-between; align-items: center;">
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="navbar-brand mx-auto">
+        <a class="nav-link logo" href="#"></a>
+    </div>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+        <div class="navbar-nav">
+            <a class="nav-link text-white" href="inventaire.html">Montres Enregistrées</a>
+        </div>
+    </div>
+    <div class="navbar-nav">
+        <a href="#" style="color: white">Menu</a> <!-- menu est la juste pour apparence-->
+    </div>
+</nav>
+
+<main class="container my-4" style="max-width: 50%; margin: 0 auto">
+    <h1>Montres Rolex</h1>
+    <ul id="montres" class="row list-unstyled"></ul>
+    <p class="alert alert-danger d-none" role="alert"></p>
+</main>
+<section class="container border-top my-4">
+<h3 class="m-2 col-4">Ajouter votre Montre</h3>
+<form class="container">
+    <label class="row m-2" for="marque">Marque *</label>
+    <input class="col-4 m-2 form-control" type="text" name="marque" id="marque" minlength="1" maxlength="100" required>
+
+    <label class="row m-2" for="model">Modèle *</label>
+    <input class="col-4 m-2 form-control" type="text" name="model" id="model" minlength="1" maxlength="100" required><br>
+
+    <label class="row m-2" for="mouvement">Mouvement *</label>
+    <input class="col-4 m-2 form-control" id="mouvement" name="mouvement" type="text" minlength="1" maxlength="50" required>
+
+    <label class="row m-2" for="prix">Prix *</label>
+    <input class="col-4 m-2 form-control" type="number" id="prix" name="prix" min="0" required>
+
+    <label class="row m-2" for="image">Image de votre montre (URL) *</label>
+    <input class="col-4 m-2 form-control" type="text" id="image" name="image" required>
+    <div id="error" class="rouge invisible col-4 p-2 m-2">l’image doit être un URL valide commençant par http:// ou https:// et finissant par .jpg ou .png.</div>
+    
+    <button class="btn btn-primary m-2" type="submit">Enregistrer</button>
+    <div id="bravo" class="invisible vert col-4 p-2 m-2">Votre Objet a ete enregistrer!</div>
+</form>
+</section>
+
+<footer class="bg-body-tertiary text-center text-lg-start">
+    <div class="text-center p-3" style="height: 7rem; color: white;background-color: #0086ff;">
+        © 2024 Copyright:
+        <a class="text-body" href="#" style="color: white">MDBootstrap.com</a>
+    </div>
+</footer>
+</body>
+</html>

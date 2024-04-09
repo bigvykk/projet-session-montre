@@ -1,0 +1,26 @@
+[
+  {
+    "id": 1,
+    "model": "Deepsea",
+    "image": "https://media.rolex.com/image/upload/v1708437838/rolexcom/navigation/watches-navigation/rolex-watches-navigation-deepsea_m136660-0003.jpg",
+    "marque": "Rolex",
+    "mouvement": "Automatique",
+    "prix": 12900
+  },
+  {
+    "id": 2,
+    "model": "Day-Date",
+    "image": "https://media.rolex.com/image/upload/v1708437824/rolexcom/navigation/watches-navigation/rolex-watches-navigation-day-date_m228236-0012_2210jva_001.jpg",
+    "marque": "Rolex",
+    "mouvement": "Automatique",
+    "prix": 34823
+  },
+  {
+    "id": 3,
+    "model": "Sky-Dweller",
+    "image": "https://assets.website-files.com/5de94b1758e6cbadd151b8d9/5de950684b9e5a94109dbd17_Rolex%201_1-poster-00001.jpg",
+    "marque": "Rolex",
+    "mouvement": "Automatique",
+    "prix": 30000
+  }
+]
